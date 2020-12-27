@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.wrapper{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    background-color:rgb(240, 218, 218);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.calendar{
+    width:600px;
+    /* height:400px; */
+    box-shadow: 0px 0px 15px 3px rgba(255,4,4,0.3);
+}
+.main-section{
+    height:150px;
+    width: 100%;
+    background-color: #2ecc71;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color:white;
+}
+.weeks{
+    display: flex;
+    align-items: center;
+    background-color:#27ae60;
+}
+.weeks div{
+    width:14.28%;
+    text-align: center;
+    padding: 10px;
+    color:white;
+}
+.weeks div:hover{
+    color:white;
+    background-color: rgb(25, 240, 245);
+}
+.days{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.days div{
+    text-align: center;
+    width:14.28%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: 300;
+    transition: all 0.4s;
+}
+.days div:hover{
+    color:black;
+    cursor: pointer;
+    background-color: grey;
+}
+.today{
+    background-color: #2ecc71;
+    color:white;
+}
+#month h2{
+    font-size: 30px;
+}
+#previous{
+    width:50px;
+    margin:0px 10px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+#after{
+    width:50px;
+    margin:0px 10px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transition: 0.4s all;
+}
+#previous:hover,#after:hover{
+   color:white;
+   background-color: rgba(0, 0, 0, 0.2);
+}
